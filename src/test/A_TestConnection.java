@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import connection.OracleConnection;
-import domain.BankAccountException;
+import domain.CustomerException;
 
 public class A_TestConnection {
 
@@ -19,7 +19,7 @@ public class A_TestConnection {
 												//DatenbankversionsNr ausgeben
 			oracon.close(); //schlieﬂen
 		} 
-		catch (BankAccountException | SQLException e) 
+		catch (CustomerException | SQLException e) 
 		{
 			System.out.println(e.getMessage());
 		}
